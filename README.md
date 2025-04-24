@@ -106,10 +106,11 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use and 
 ## 📬 Contact
 
 Developed and maintained by [Mahesh Tambe].  
+
 For professional inquiries: [maheshtambe5112@gmail.com]
 
 ---
 
 > *“The value of a man resides in what he gives and not in what he is capable of receiving.” – Albert Einstein*
-```
-<img width="960" alt="donation-portal" src="https://github.com/user-attachments/assets/f2aad298-6d63-4b82-ab49-8661e0b538d3" />
+
+<img width="960" alt="donation-portal" src="https://github.com/user-attachments/assets/093cdef1-d10c-49c1-b357-73b443dd8f11" />
