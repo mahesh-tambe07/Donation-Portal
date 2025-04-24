@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000 100%);
+    overflow: hidden;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  /* Simulated stars */
+  body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.1;
+    z-index: 0;
+  }
+  
+  /* Plant base */
+  .plant {
+    position: relative;
+    height: 60vmin;
+    width: 20vmin;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: growPlant 3s ease-in-out forwards;
+  }
+  
+  /* Stem */
+  .stem {
+    position: absolute;
+    bottom: 0;
+    width: 1vmin;
+    height: 0;
+    background: #5ef9ff;
+    border-radius: 2vmin;
+    animation: growStem 3s ease-in-out forwards;
+    filter: blur(0.3vmin);
+    box-shadow: 0 0 2vmin #5ef9ff;
+  }
+  
+  @keyframes growStem {
+    to {
+      height: 45vmin;
+    }
+  }
+  
+  /* Leaves */
+  .leaf {
+    position: absolute;
+    width: 10vmin;
+    height: 4vmin;
+    background: #2de4c7;
+    border-radius: 50%;
+    filter: blur(0.2vmin);
+    opacity: 0;
+  }
+  
+  .l1 {
+    left: -6vmin;
+    bottom: 10vmin;
+    transform: rotate(-40deg);
+    animation: showLeaf 1s 2s forwards;
+  }
+  
+  .l2 {
+    right: -6vmin;
+    bottom: 15vmin;
+    transform: rotate(40deg);
+    animation: showLeaf 1s 2.3s forwards;
+  }
+  
+  .l3 {
+    left: -5vmin;
+    bottom: 25vmin;
+    transform: rotate(-30deg);
+    animation: showLeaf 1s 2.6s forwards;
+  }
+  
+  @keyframes showLeaf {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Flower */
+  .flower {
+    position: absolute;
+    bottom: 45vmin;
+    width: 10vmin;
+    height: 10vmin;
+    animation: fadeIn 1s 3s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .petal {
+    position: absolute;
+    width: 5vmin;
+    height: 8vmin;
+    background: #6bf0ff;
+    border-radius: 50% 50% 0 0;
+    transform-origin: bottom center;
+    filter: blur(1vmin);
+    opacity: 0;
+    animation: bloom 0.5s ease-in-out forwards;
+  }
+  
+  .p1 { transform: rotate(0deg) translateY(-3vmin); animation-delay: 3s; }
+  .p2 { transform: rotate(90deg) translateY(-3vmin); animation-delay: 3.2s; }
+  .p3 { transform: rotate(180deg) translateY(-3vmin); animation-delay: 3.4s; }
+  .p4 { transform: rotate(270deg) translateY(-3vmin); animation-delay: 3.6s; }
+  
+  @keyframes bloom {
+    to {
+      opacity: 1;
+      transform: scale(1.1) translateY(-3vmin);
+    }
+  }
+  
