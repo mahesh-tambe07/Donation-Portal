@@ -7,11 +7,11 @@ require("dotenv").config();
 const app = express();
 const port = 5000;
 
-// Body parser middleware
+// middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// MySQL database connection
+// MySQL database connections
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -24,7 +24,7 @@ db.connect((err) => {
   console.log("Connected to the database.");
 });
 
-// Razorpay instance
+// Razorpay integration 
 const razorpay = new Razorpay({
   key_id: process.env.RAZORPAY_KEY_ID,
   key_secret: process.env.RAZORPAY_KEY_SECRET,
