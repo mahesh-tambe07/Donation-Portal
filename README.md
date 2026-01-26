@@ -10,7 +10,6 @@ A full-featured, secure, and scalable web application that facilitates online do
 - [🛠️ Installation Guide](#️-installation-guide)
 - [🧪 Testing](#-testing)
 - [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
 - [📬 Contact](#-contact)
 
 ---
