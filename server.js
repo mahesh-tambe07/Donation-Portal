@@ -1,4 +1,4 @@
-//server.js
+
 const express = require("express");
 const Razorpay = require("razorpay");
 const bodyParser = require("body-parser");
